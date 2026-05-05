@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Expert Pro Store - Quadros de Alta Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .carbon-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: #3b82f6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-white">BE</div>
+                <span class="text-xl font-bold tracking-tighter uppercase">Bike Expert <span class="text-blue-500 text-sm">PT</span></span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#" class="text-blue-400">Quadros</a>
+                <a href="#" class="hover:text-blue-400 transition">Rodas</a>
+                <a href="#" class="hover:text-blue-400 transition">Componentes</a>
+                <a href="#" class="hover:text-blue-400 transition">Tecnologia</a>
+            </div>
+
+            <div class="flex items-center space-x-5">
+                <button class="hover:text-blue-400"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="hover:text-blue-400 relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="absolute -top-2 -right-2 bg-blue-600 text-[10px] rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header da Categoria -->
+    <header class="pt-32 pb-20 bg-slate-900 border-b border-white/5">
+        <div class="container mx-auto px-6">
+            <nav class="text-xs text-gray-500 mb-4 uppercase tracking-widest">
+                <a href="#" class="hover:text-white">Home</a> / <span class="text-blue-500">Quadros de Carbono</span>
+            </nav>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Framesets de Carbono</h1>
+            <p class="text-gray-400 max-w-2xl text-lg">Explora a nossa gama de quadros ultra-leves, testados sob os mais rigorosos padrões de qualidade ISO. Engenharia Toray para ciclistas que não aceitam compromissos.</p>
+        </div>
+    </header>
+
+    <!-- Filtros Rápidos -->
+    <section class="py-8 bg-[#0a0f1d] border-b border-white/5 sticky top-[73px] z-40">
+        <div class="container mx-auto px-6 flex space-x-4 overflow-x-auto pb-2 md:pb-0">
+            <button class="bg-blue-600 px-6 py-2 rounded-full text-sm font-bold whitespace-nowrap">Todos os Quadros</button>
+            <button class="bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full text-sm font-bold whitespace-nowrap transition">Road (Estrada)</button>
+            <button class="bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full text-sm font-bold whitespace-nowrap transition">MTB (Montanha)</button>
+            <button class="bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full text-sm font-bold whitespace-nowrap transition">Gravel / CX</button>
+            <button class="bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full text-sm font-bold whitespace-nowrap transition">E-Bike</button>
+        </div>
+    </section>
+
+    <!-- Listagem de Produtos -->
+    <main class="py-20 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <!-- Produto 1: Estrada Aero -->
+            <div class="product-card bg-slate-800/30 border border-white/5 rounded-2xl overflow-hidden flex flex-col">
+                <div class="relative group aspect-[4/3] overflow-hidden bg-slate-700">
+                    <img src="https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?q=80&w=2070&auto=format&fit=crop" alt="Quadro de Estrada Aero" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Road Aero</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">LCR017-D Disc</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-1">Quadro aero com integração total de cabos. Otimizado para travões de disco e pneus até 32mm.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <div>
+                            <span class="text-xs text-gray-500 block">A partir de</span>
+                            <span class="text-xl font-bold text-white">US$ 649,00</span>
+                        </div>
+                        <button class="p-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 2: MTB XC -->
+            <div class="product-card bg-slate-800/30 border border-white/5 rounded-2xl overflow-hidden flex flex-col">
+                <div class="relative group aspect-[4/3] overflow-hidden bg-slate-700">
+                    <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?q=80&w=2070&auto=format&fit=crop" alt="Quadro MTB XC" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">MTB Hardtail</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">LCM911 Boost</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-1">Ultra-leve (920g). Geometria moderna de XC com ângulo de direção de 68.5°. Compatível com RockShox e Fox.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <div>
+                            <span class="text-xs text-gray-500 block">A partir de</span>
+                            <span class="text-xl font-bold text-white">US$ 489,00</span>
+                        </div>
+                        <button class="p-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 3: Gravel -->
+            <div class="product-card bg-slate-800/30 border border-white/5 rounded-2xl overflow-hidden flex flex-col">
+                <div class="relative group aspect-[4/3] overflow-hidden bg-slate-700">
+                    <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?q=80&w=2070&auto=format&fit=crop" alt="Quadro Gravel" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Gravel Adventure</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">LCG021-D All-Road</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-1">Pronto para bikepacking com múltiplos pontos de fixação. Espaço para pneus 700x45C ou 650B*2.1".</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <div>
+                            <span class="text-xs text-gray-500 block">A partir de</span>
+                            <span class="text-xl font-bold text-white">US$ 589,00</span>
+                        </div>
+                        <button class="p-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 4: MTB Full Suspension -->
+            <div class="product-card bg-slate-800/30 border border-white/5 rounded-2xl overflow-hidden flex flex-col">
+                <div class="relative group aspect-[4/3] overflow-hidden bg-slate-700">
+                    <img src="https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?q=80&w=1932&auto=format&fit=crop" alt="Quadro Full Suspension" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Full Suspension</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">LFS917 Trail</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-1">Curso de 120mm traseiro. Linkage progressivo para tração máxima em subidas técnicas.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <div>
+                            <span class="text-xs text-gray-500 block">A partir de</span>
+                            <span class="text-xl font-bold text-white">US$ 899,00</span>
+                        </div>
+                        <button class="p-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Secção Técnica -->
+    <section class="py-20 bg-slate-950 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 italic uppercase tracking-tighter">Porquê escolher os quadros LightCarbon?</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-blue-500 mt-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Moldagem EPS</h4>
+                                <p class="text-sm text-gray-400 text-justify">O uso de mandris internos de poliestireno expandido (EPS) garante paredes internas lisas, eliminando rugas de fibra e pontos fracos, resultando num quadro mais leve e resistente.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-blue-500 mt-1"><i class="fa-solid fa-microscope text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Qualidade Toray®</h4>
+                                <p class="text-sm text-gray-400 text-justify">Utilizamos exclusivamente fibras de carbono japonesas Toray T700, T800 e T1000 em layouts específicos para equilibrar conforto vertical e rigidez lateral.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-blue-500 mt-1"><i class="fa-solid fa-shield-halved text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Garantia de 2 Anos</h4>
+                                <p class="text-sm text-gray-400 text-justify">Todos os nossos quadros passam por testes que excedem as normas ISO 4210 em 20%, garantindo total confiança nas descidas mais velozes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-3xl border border-white/10 relative overflow-hidden">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-blue-600/10 blur-3xl rounded-full"></div>
+                    <h3 class="text-xl font-bold mb-6 flex items-center space-x-2">
+                        <i class="fa-solid fa-circle-info text-blue-500"></i>
+                        <span>Serviço de Pintura Customizada</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-6">Oferecemos serviços de pintura profissional (Design YS Paint) para que o teu quadro seja único. Escolhe entre acabamentos Matte, Glossy ou Chameleon.</p>
+                    <button class="text-blue-400 font-bold hover:underline text-sm uppercase tracking-widest">Consultar opções de pintura →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-black py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center space-x-2 mb-6">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-white">LC</div>
+                    <span class="text-xl font-bold tracking-tighter uppercase">LightCarbon</span>
+                </div>
+                <p class="text-gray-500 max-w-sm mb-6">Líder global na fabricação de componentes de carbono OEM e ODM de alta performance.</p>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Quadros</h4>
+                <ul class="text-gray-500 space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-blue-400">Estrada Aero</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Estrada Lightweight</a></li>
+                    <li><a href="#" class="hover:text-blue-400">BTT Rígidos</a></li>
+                    <li><a href="#" class="hover:text-blue-400">BTT Suspensão Total</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Apoio ao Cliente</h4>
+                <ul class="text-gray-500 space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-blue-400">Guia de Tamanhos</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Manuais Técnicos</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Envio e Alfândega</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-16 pt-8 border-t border-white/5 text-center text-gray-600 text-xs">
+            © 2024 LightCarbon Pro Store. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
